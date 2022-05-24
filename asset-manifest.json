@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fisi/static/css/main.22bfd2f4.css",
+    "main.js": "/fisi/static/js/main.36a53f77.js",
+    "index.html": "/fisi/index.html",
+    "main.22bfd2f4.css.map": "/fisi/static/css/main.22bfd2f4.css.map",
+    "main.36a53f77.js.map": "/fisi/static/js/main.36a53f77.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22bfd2f4.css",
+    "static/js/main.36a53f77.js"
+  ]
+}

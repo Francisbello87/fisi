@@ -1,0 +1,28 @@
+:root {
+  --green-color: #afba15;
+  --blue-color: #0c0847;
+  --black-color: #000;
+  --white-color: #fff;
+}
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+}
+.nxtBtn {
+  background: var(--green-color);
+  border: none;
+  padding: 10px 80px;
+  color: var(--blue-color);
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.nxtBtn:hover {
+  background: #97a012;
+}
+.form-cta {
+  /* margin-top: 32px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

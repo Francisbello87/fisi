@@ -1,0 +1,73 @@
+:root {
+  --green-color: #afba15;
+  --blue-color: #0c0847;
+  --black-color: #000;
+  --white-color: #fff;
+}
+
+a {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+a:hover {
+  color: #afba15;
+  text-decoration: underline;
+}
+.form-wrapper {
+  color: black;
+  padding: 30px 50px;
+  color: var(--white-color);
+  border-radius: 15px;
+  border: 1px solid var(--blue-color);
+  margin-bottom: 50px;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 30vw;
+  border-radius: 4px;
+  caret-color: var(--green-color);
+  border: 1px solid var(--blue-color);
+}
+input:focus {
+  outline: none;
+}
+.formTitle {
+  text-align: center;
+}
+.formTitle h2 {
+  font-size: 28px;
+  color: var(--blue-color);
+  margin-bottom: 10px;
+}
+.formTitle p {
+  margin-bottom: 30px;
+  color: var(--blue-color);
+  opacity: 0.7;
+}
+label {
+  font-weight: bold;
+  color: grey;
+}
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+input:invalid[focused="true"] ~ span {
+  display: block;
+}

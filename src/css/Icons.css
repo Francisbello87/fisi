@@ -1,15 +1,26 @@
 .logo {
   width: 120px;
-  height: 120px;
+  /* height: 80px; */
   display: flex;
   align-items: center;
   position: sticky;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.logo:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
 }
 
 .sdg-wheel {
+  height: 100px;
   position: absolute;
-  right: 128px;
-  bottom: 6%;
+  right: 80px;
+  bottom: 8%;
   opacity: 0.6;
   z-index: -2;
 }

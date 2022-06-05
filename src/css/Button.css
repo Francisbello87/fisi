@@ -8,7 +8,7 @@ button {
   font-family: "Source Sans Pro", sans-serif;
   cursor: pointer;
 }
-.nxtBtn {
+.btn {
   background: var(--green-color);
   border: none;
   padding: 10px 80px;
@@ -17,12 +17,44 @@ button {
   font-weight: 600;
   border-radius: 6px;
 }
-.nxtBtn:hover {
+.btn:hover {
   background: #97a012;
 }
+.start-btn {
+  padding: 7px 50px;
+}
 .form-cta {
-  /* margin-top: 32px; */
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+/* .login-btn {
+  background: var(--blue-color);
+  color: var(--white-color);
+} */
+.sign-up {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-close {
+  cursor: pointer;
+  border: 1px solid #999;
+  position: fixed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  right: calc(25% - 1px);
+  top: 28%;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+.btn-close:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
 }

@@ -7,7 +7,7 @@ function Icons() {
       <div className="container">
         <nav className="nav">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`}
+            src={`${process.env.PUBLIC_URL}/assets/images/Blue.png`}
             alt=""
             className="logo"
           />

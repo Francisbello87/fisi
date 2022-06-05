@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import FormInput from "./FormInput";
-import Icons from "./Icons";
-import "../css/Details.css";
-import NextButton from "../buttons/NextButton";
+import FormInput from "../FormInput";
+import Icons from "../Icons";
+import "../../css/auth.css";
+import "../../css/Button.css";
+import { Link } from "react-router-dom";
 
-function Details() {
+function SignUpPage() {
   const [user, setUser] = useState({
     fname: "",
     lname: "",
     email: "",
     company: "",
     position: "",
+    sector: "",
   });
 
   const inputs = [
@@ -58,8 +60,18 @@ function Details() {
       name: "position",
       type: "text",
       placeholder: "Position",
-      errorMessage: "Enter Valid position in the company",
+      errorMessage: "Input field can't be empty",
       label: "Position",
+      pattern: "^[A-Za-z]{3,16}$",
+      required: true,
+    },
+    {
+      id: 6,
+      name: "sector",
+      type: "text",
+      placeholder: "Sector",
+      errorMessage: "Input field can't be empty",
+      label: "Sector",
       pattern: "^[A-Za-z]{3,16}$",
       required: true,
     },
@@ -78,8 +90,7 @@ function Details() {
       <div className="container form-container">
         <form className="form-wrapper" onSubmit={handleSubmit}>
           <div className="formTitle">
-            <h2> Food Industry Sustainability Index</h2>
-            <p>Please fill the form below</p>
+            <h2> Sign Up </h2>
           </div>
 
           {inputs.map((input) => (
@@ -91,8 +102,14 @@ function Details() {
             />
           ))}
           <div className="form-cta">
-            <a href="/">Continue from last saved ? </a>
-            <NextButton />
+            <p>
+              Already a member?
+              <Link to="/signinpage" className="sign-up">
+                Login
+              </Link>
+              instead
+            </p>
+            <button className="btn">Sign up</button>
           </div>
         </form>
       </div>
@@ -100,4 +117,4 @@ function Details() {
   );
 }
 
-export default Details;
+export default SignUpPage;

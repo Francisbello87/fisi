@@ -1,10 +1,4 @@
-:root {
-  --green-color: #afba15;
-  --blue-color: #0c0847;
-  --black-color: #000;
-  --white-color: #fff;
-}
-
+@import url("../index.css");
 a {
   color: var(--blue-color);
   text-decoration: underline;
@@ -33,7 +27,7 @@ a:hover {
 }
 input {
   padding: 10px;
-  margin: 10px 0;
+  margin: 5px 0;
   width: 30vw;
   border-radius: 4px;
   caret-color: var(--green-color);

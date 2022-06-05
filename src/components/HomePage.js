@@ -6,7 +6,7 @@ function HomePage() {
   let navigate = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      navigate("details");
+      navigate("signinpage");
     }, 5000);
   }, [navigate]);
   return (

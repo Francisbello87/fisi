@@ -4,7 +4,7 @@ import "../css/Button.css";
 function NextButton() {
   return (
     <div>
-      <button className="nxtBtn">Next</button>
+      <button className="btn">Next</button>
     </div>
   );
 }

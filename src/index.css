@@ -24,6 +24,11 @@ a {
   width: 80%;
   margin: auto;
 }
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
 .preloader {
   display: flex;
   align-items: center;
@@ -34,6 +39,7 @@ a {
   height: 80px;
   animation: rotation 3s infinite linear;
 }
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);

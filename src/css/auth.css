@@ -36,6 +36,29 @@ input {
 input:focus {
   outline: none;
 }
+input[type="radio"] {
+  padding: 10px;
+  margin: 25px 0;
+  margin-right: 20px;
+  width: 1vw;
+  display: inline-block;
+}
+/* .answers {
+  display: flex;
+  flex-direction: column;
+} */
+.questionInput {
+  color: var(--blue-color);
+}
+.questionInput h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.questionInput h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
 .formTitle {
   text-align: center;
 }
@@ -64,4 +87,11 @@ input:invalid[focused="true"] {
 }
 input:invalid[focused="true"] ~ span {
   display: block;
+}
+.section-link {
+  text-decoration: none;
+}
+.section-link:hover {
+  color: var(--blue-color);
+  text-decoration: none;
 }

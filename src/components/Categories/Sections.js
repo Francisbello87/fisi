@@ -55,7 +55,7 @@ function Sections() {
   ];
   return (
     <>
-      <Icons />
+      {/* <Icons /> */}
       <div className="sections-container">
         <div className="sections-wrapper ">
           {cardContent.map((card) => (
@@ -72,19 +72,6 @@ function Sections() {
             title={cardContent.title}
           />
         </div>
-        // <div className="sections-wrapper ">
-        //   {cardContent.map((card) => (
-        //     <Popup
-        //       handleClose={togglePopup}
-        //       title={card}
-        //       key={card.id}
-        //       {...card}
-        //       value={message}
-        //       message={card.message}
-        //       // onChange={(e) => setMessage(e.target.key)}
-        //     />
-        //   ))}
-        // </div>
       )}
     </>
   );

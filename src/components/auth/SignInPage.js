@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import FormInput from "../FormInput";
-import Icons from "../Icons";
 import "../../css/auth.css";
 import "../../css/Button.css";
 
@@ -45,7 +44,6 @@ function SignInPage() {
 
   return (
     <>
-      <Icons />
       <div className="container form-container">
         <form className="form-wrapper" onSubmit={handleSubmit}>
           <div className="formTitle">

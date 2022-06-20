@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import FormInput from "../FormInput";
-import Icons from "../Icons";
 import "../../css/auth.css";
 import "../../css/Button.css";
 import { Link } from "react-router-dom";
@@ -86,7 +85,6 @@ function SignUpPage() {
   console.log(user);
   return (
     <>
-      <Icons />
       <div className="container form-container">
         <form className="form-wrapper" onSubmit={handleSubmit}>
           <div className="formTitle">
@@ -109,7 +107,9 @@ function SignUpPage() {
               </Link>
               instead
             </p>
-            <button className="btn">Sign up</button>
+            <Link to="/Sections" className="btn section-link">
+              Sign up
+            </Link>
           </div>
         </form>
       </div>

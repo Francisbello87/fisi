@@ -5,10 +5,14 @@ import SignInPage from "./components/auth/SignInPage";
 import Preloader from "./components/Preloader";
 import Sections from "./components/Categories/Sections";
 import Popup from "./components/Categories/Popup";
+import Icons from "./components/Icons";
+import QuestionInputs from "./components/questions/QuestionInputs";
+
 function App() {
   return (
     <Router>
-      <div className="App ">
+      <div className="App">
+        <Icons />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/signinpage" element={<SignInPage />} />
@@ -16,6 +20,7 @@ function App() {
           <Route path="/preloader" element={<Preloader />} />
           <Route path="/sections" element={<Sections />} />
           <Route path="/popup" element={<Popup />} />
+          <Route path="/questioninput" element={<QuestionInputs />} />
         </Routes>
       </div>
     </Router>
